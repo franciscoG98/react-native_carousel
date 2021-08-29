@@ -8,6 +8,9 @@ export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab Two</Text>
+      <Text style={styles.content}>Tab Two</Text>
+      <Text style={styles.content}>Tab Two</Text>
+
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
     </View>
@@ -23,6 +26,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  content: {
+    fontSize: 12,
+    fontWeight: '200',
   },
   separator: {
     marginVertical: 30,

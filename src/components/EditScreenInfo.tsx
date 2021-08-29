@@ -3,35 +3,44 @@ import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import Colors from '../constants/Colors';
-import { MonoText } from './StyledText';
+// import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
 
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
     <View>
-      <View style={styles.getStartedContainer}>
-        <Text
+      <View style={styles.CarouselContainer}>
+        {/* <Text
           style={styles.getStartedText}
           lightColor="rgba(0,0,0,0.8)"
           darkColor="rgba(255,255,255,0.8)">
           Open up the code for this screen:
-        </Text>
+        </Text> */}
 
-        <View
+        {/* explica como definir el tipo con typescript */}
+        {/* <View
           style={[styles.codeHighlightContainer, styles.homeScreenFilename]}
           darkColor="rgba(255,255,255,0.05)"
           lightColor="rgba(0,0,0,0.05)">
           <MonoText>{path}</MonoText>
-        </View>
+        </View> */}
+        
 
-        <Text
+        {/* <Text
           style={styles.getStartedText}
           lightColor="rgba(0,0,0,0.8)"
           darkColor="rgba(255,255,255,0.8)">
           Change any of the text, save the file, and your app will automatically update.
         </Text>
+
+        aca iconos a github y linkedin
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a> */}
       </View>
 
+
+      {/* btn con handleclick */}
       <View style={styles.helpContainer}>
         <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
           <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
@@ -50,7 +59,7 @@ function handleHelpPress() {
 }
 
 const styles = StyleSheet.create({
-  getStartedContainer: {
+  CarouselContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
   },
@@ -61,11 +70,11 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     paddingHorizontal: 4,
   },
-  getStartedText: {
-    fontSize: 17,
-    lineHeight: 24,
-    textAlign: 'center',
-  },
+  // getStartedText: {
+  //   fontSize: 17,
+  //   lineHeight: 24,
+  //   textAlign: 'center',
+  // },
   helpContainer: {
     marginTop: 15,
     marginHorizontal: 20,
